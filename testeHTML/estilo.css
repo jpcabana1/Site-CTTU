@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background: white;
+}
+h1{
+	margin-left: 600px;
+	font-size: 80px;
+	color: green;
+}
+
+a{
+	background: #b9c941;
+	font-size: 40px;
+	margin-left: 600px;
+	text-decoration: none;
+	padding: 5px 10px;
+}
+/*Link*/
+a:link{
+	color: gray;
+}
+
+/*Visitados*/
+
+a:visited{
+	color: gray;
+}
+
+/*Hover*/
+a:hover{
+	color: #fff;
+	background-size: 720px;
+	background: linear-gradient(red, yellow);
+	background: linear-gradient(20deg, red, yellow);
+	background: radial-gradient(yellow, green);
+}
+/*Active*/
+a:active{
+	color: #535353;
+}
+
+
+#bla{
+	margin-left: 350px;
+	padding-left: 300px;
+	background: linear-gradient(red, yellow);
+	background: linear-gradient(20deg, red, yellow);
+	background: radial-gradient(yellow, green);
+	width: 550px;
+	height: 50px;
+	font-size: 40px;
+	box-shadow: 10px 10px 10px black;
+}
+
+.verde{
+	color: green;
+}
+
+.vermelho{
+	color: red;
+}
+
+.laranja{
+	color: orange;
+}
+.azul{
+	color: blue;
+}
