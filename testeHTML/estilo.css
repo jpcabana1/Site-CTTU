@@ -1,56 +1,95 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    box-sizing: border-box;
 }
 
-body{
-	background: white;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #808080;
+    padding: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: green;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    height: 400px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 400px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #808080;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
 }
 
 a{
-	background: #b9c941;
-	font-size: 30px;
-	margin-left: 30%;
-	text-decoration: none;
-	margin-bottom: 50px;
-	padding-right: 200px;
-	padding-left: 200px;
-}
-/*Link*/
-a:link{
-	color: black;
-	background: radial-gradient(#3399ff, #ccff99);
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
 }
 
-/*Visitados*/
-
-a:visited{
-	color: black;
-	background: radial-gradient(#3399ff, #ccff99);
+li{
+    margin-bottom: 30px;
+    text-align: center;
+    background-color: blue;
 }
 
-/*Hover*/
-a:hover{
-	color: white;
-	background: radial-gradient(yellow, red);
-}
-/*Active*/
-a:active{
-	color: white;
-	background: radial-gradient(yellow, blue);
+a.ex1:hover{
+    color: red;
 }
 
-.verde{
-	color: green;
+a.ex1:active{
+    color: #ff8c1a;
 }
 
-.vermelho{
-	color: red;
+a.ex2:link, a.ex2:visited{
+    width: 300px;
+    height: auto;
+    color: black;
+}
+a.ex2:hover{
+     background: radial-gradient(yellow, red);
+}
+a.ex2:active{
+    background: radial-gradient(yellow, blue);
 }
 
-.laranja{
-	color: orange;
-}
-.azul{
-	color: blue;
-}
