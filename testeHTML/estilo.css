@@ -93,3 +93,19 @@ a.ex2:active{
     background: radial-gradient(yellow, blue);
 }
 
+#tabletop{
+    background-color: green;
+    color: white;
+    font-size: 50px;
+}
+#tablemiddle{
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+}
+
+#tablebottom{
+    background-color: yellow;
+    color: black;
+    font-size: 25px;
+}
