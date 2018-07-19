@@ -19,7 +19,7 @@ header {
 nav {
     float: left;
     width: 30%;
-    height: 400px; /* only for demonstration, should be removed */
+    height: 500px; /* only for demonstration, should be removed */
     background: #ccc;
     padding: 20px;
 }
@@ -85,6 +85,7 @@ a.ex2:link, a.ex2:visited{
     width: 300px;
     height: auto;
     color: black;
+    padding-right: 250px;
 }
 a.ex2:hover{
      background: radial-gradient(yellow, red);
